@@ -5,21 +5,19 @@ env:
 rules:
   no-underscore-dangle: false
   space-in-parens: "never"
+  space-before-blocks: "always"
   space-in-brackets: "always"
   no-lonely-if: true
   default-case: true
-  quotes:
-    - 1
-    - "single"
-    - "avoid-escape"
+  quotes: [1, "single", "avoid-escape"]
   strict: false
   no-use-before-define: "nofunc"
   camelcase: false
   new-cap: "newIsCap"
-  semi:
-    - 0
-    - "always"
+  curly: [2, "multi-line"]
+  semi: [0, "always"]
 ecmaFeatures:
+  arrowFunctions: true
   binaryLiterals: true
   blockBindings: true
   forOf: true
@@ -33,3 +31,6 @@ ecmaFeatures:
   regexYFlag: true
   templateStrings: true
   unicodeCodePointEscapes: true
+  spread: true
+  restParams: true
+  destructuring: true
