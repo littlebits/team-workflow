@@ -2,6 +2,9 @@ env:
   node: true
   mocha: true
   browser: true
+  es6: true
+ecmaFeatures:
+  modules: true
 rules:
   no-underscore-dangle: false
   space-in-parens: "never"
@@ -16,21 +19,3 @@ rules:
   new-cap: "newIsCap"
   curly: [2, "multi-line"]
   semi: [0, "always"]
-ecmaFeatures:
-  arrowFunctions: true
-  binaryLiterals: true
-  blockBindings: true
-  forOf: true
-  generators: true
-  objectLiteralComputedProperties: true
-  objectLiteralDuplicateProperties: true
-  objectLiteralShorthandMethods: true
-  objectLiteralShorthandProperties: true
-  octalLiterals: true
-  regexUFlag: true
-  regexYFlag: true
-  templateStrings: true
-  unicodeCodePointEscapes: true
-  spread: true
-  restParams: true
-  destructuring: true
